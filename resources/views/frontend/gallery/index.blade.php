@@ -44,7 +44,8 @@
                                 <a href="{{ asset('uploads/img/galleries/'.$gallery->gallery_image) }}" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
 
                             </figure>            
-                    
+                            <a href="{{ $gallery->gl }}" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+  
                 @else
                             
                                            <video width="100%" height="280" controls>
