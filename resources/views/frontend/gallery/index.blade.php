@@ -41,23 +41,13 @@
                         </figure>
 
                         @elseif ($gallery->Type=="youtube")
-                        <a href="http://ebdaamedia.com/uploads/img/galleries/1612098285-offer-my-services-as-graphic-designer-and-video-editing.jfif" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                      
                         <figure class="image-box">
-                            <a href="http://ebdaamedia.com/uploads/img/galleries/1612098285-offer-my-services-as-graphic-designer-and-video-editing.jfif" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
-
-                            <a href="http://ebdaamedia.com/uploads/img/galleries/1612098285-offer-my-services-as-graphic-designer-and-video-editing.jfif" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
-
-                            <a href="http://ebdaamedia.com/uploads/img/galleries/1612098285-offer-my-services-as-graphic-designer-and-video-editing.jfif" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
-
-                            {!! $gallery->url !!}
+                            <img style="width:100%;height:280px;"
+                                src="{{ asset('uploads/img/galleries/'.$gallery->gallery_image) }}" alt="blog image">
                             <a href="{{ asset('uploads/img/galleries/'.$gallery->gallery_image) }}"
                                 class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
-                                <a href="http://ebdaamedia.com/uploads/img/galleries/1612098285-offer-my-services-as-graphic-designer-and-video-editing.jfif" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
-
-                                <a href="http://ebdaamedia.com/uploads/img/galleries/1612098285-offer-my-services-as-graphic-designer-and-video-editing.jfif" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
-
                         </figure>
-
                         @else
 
                         <video width="100%" height="280" controls>
