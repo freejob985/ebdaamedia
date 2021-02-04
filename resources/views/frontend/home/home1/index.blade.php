@@ -1146,8 +1146,8 @@
                                     type="video/ogg">
                                 Your browser does not support the video tag.
                             </video>
-                            <a href="{{ $gallery->gl }}" class="lightbox-image" data-fancybox="gallery"><i
-                                class="flaticon-zoom"></i></a>
+                            <a href="{{ asset('uploads/img/galleries/'.$gallery->gallery_image) }}"
+                                class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
                             @endif
 
                             @else
