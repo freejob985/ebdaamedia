@@ -38,9 +38,9 @@
                                         </figure>
                                         
                                   @elseif  ($gallery->Type=="youtube")      
-                                  
+                                  <a href="{{ asset('uploads/img/galleries/'.$gallery->gallery_image) }}" class="lightbox-image" data-fancybox="gallery">
                                 {!! $gallery->url !!}            
-
+                            </a>
                 @else
                             
                                            <video width="100%" height="280" controls>
