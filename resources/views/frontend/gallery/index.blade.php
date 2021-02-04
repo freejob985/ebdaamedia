@@ -34,12 +34,14 @@
                                       @if ($gallery->Type=="picture")
                                       <figure class="image-box">
                                             <img style="width:100%;height:280px;" src="{{ asset('uploads/img/galleries/'.$gallery->gallery_image) }}" alt="blog image">
-                                            <a  class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                                            <a href="{{ asset('uploads/img/galleries/'.$gallery->gallery_image) }}" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
                                         </figure>
                                         
                                   @elseif  ($gallery->Type=="youtube")      
+                                  <figure class="image-box">
                                   <a href="{{ asset('uploads/img/galleries/'.$gallery->gallery_image) }}" class="lightbox-image" data-fancybox="gallery">
-                                {!! $gallery->url !!}            
+                                {!! $gallery->url !!}
+                            </figure>            
                             </a>
                 @else
                             
