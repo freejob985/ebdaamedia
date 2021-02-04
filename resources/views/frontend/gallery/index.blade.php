@@ -41,7 +41,7 @@
                                   <figure class="image-box">
                                   <a href="{{ asset('uploads/img/galleries/'.$gallery->gallery_image) }}" class="lightbox-image" data-fancybox="gallery">
                                 {!! $gallery->url !!}
-                                <a href="{{ $gallery->gallery_image }}" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                                <a href="{{ $gallery->gl }}" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
 
                             </figure>            
                             </a>
