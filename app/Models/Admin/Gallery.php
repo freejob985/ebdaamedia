@@ -19,5 +19,6 @@ class Gallery extends Model
         'order',
         'Type',
           'url',
+          'gl',
     ];
 }
